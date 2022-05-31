@@ -52,7 +52,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
             }
         },
         {
-            "port": 11111,
+            "port": 12345,
             "protocol": "vless",
             "settings": {
                 "clients": [
