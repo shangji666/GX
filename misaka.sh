@@ -18,18 +18,6 @@ yellow() {
 }
 
 clear
-echo "#############################################################"
-echo -e "#                 ${RED} Goorm Xray 一键安装脚本${PLAIN}                  #"
-echo -e "# ${GREEN}作者${PLAIN}: Misaka No                                           #"
-echo -e "# ${GREEN}网址${PLAIN}: https://owo.misaka.rest                             #"
-echo -e "# ${GREEN}论坛${PLAIN}: https://vpsgo.co                                    #"
-echo -e "# ${GREEN}TG群${PLAIN}: https://t.me/misakanetcn                            #"
-echo "#############################################################"
-echo ""
-
-yellow "使用前请注意："
-red "1. 我已知悉本项目有可能触发 Goorm 封号机制"
-red "2. 我不保证脚本其搭建节点的稳定性"
 read -rp "是否安装脚本？ [Y/N]：" yesno
 
 if [[ $yesno =~ "Y"|"y" ]]; then
@@ -48,7 +36,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
     },
     "inbounds": [
         {
-            "port": 11111,
+            "port": 12345,
             "protocol": "vmess",
             "settings": {
                 "clients": [
